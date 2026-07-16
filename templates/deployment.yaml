@@ -8,7 +8,9 @@ metadata:
     component: catalogue
     env: dev
 spec:
+{{- if not .Values.autoscaling.enabled }}
   replicas: 2
+{{- end }}
   selector:
     matchLabels:
       project: roboshop

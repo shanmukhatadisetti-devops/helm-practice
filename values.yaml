@@ -1,3 +1,5 @@
 deployment:
   imageurl: shanmukhatadisetti/catalogue
   imageversion: v1
+autoscaling:
+  enabled: false
